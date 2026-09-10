@@ -2,7 +2,14 @@
 
 # Menu Loop
 
-def Add_list()
+todo_list = []
+
+def Add_list():
+    todo_list
+    my_list.append("Wake up 5am")
+    print(my_list)
+
+
 def remove_task()
 
 
@@ -15,6 +22,8 @@ def remove_task()
 
 def main():
 
+    Add_list()
+   
     while True:
         print("1. Add task(s), 2. View task(s), 3. Delete tasks(s), 4. Quit")
 
@@ -23,6 +32,7 @@ def main():
 
         if user_input == "1":
             print("Add task(s)")
+            task_input = input("Write task: ")
         elif user_input == "2":
             print("View task(s)")
         elif user_input == "3":
@@ -37,6 +47,6 @@ if __name__ == "__main__":
     main() 
 
 
-# Remove tasks
+
 
 
